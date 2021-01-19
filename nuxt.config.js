@@ -1,5 +1,7 @@
 import colors from "vuetify/es5/util/colors";
-
+console.log("NECESSARY ENV ENVIRONMENTS");
+console.log(process.env.API_KEY);
+console.log(process.env.API_URL);
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -15,14 +17,17 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
+
   env: {
     NUXT_ENV_COOL_WORD: "a default value that can be overridden",
     SOME_OTHER_VALUE: "can't be overridden - missing NUXT_ENV_ prefix",
     CONDITIONAL: process.env.CONDITIONAL || "some default value", //if can't use NUXT_ENV_
-    SECRET: process.env.API_SECRET // Ensure variable reaches the client
+    API_KEY: process.env.API_KEY || "e2f3842d3dc69632ce5239805027600e", // Ensure variable reaches the client
+    API_URL: process.env.API_URL || "https://api.themoviedb.org/3" // Ensure variable reaches the client
   },
   privateRuntimeConfig: {
-    baseURL: process.env.API_SECRET
+    API_KEY: process.env.API_KEY,
+    API_URL: process.env.API_URL,
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
