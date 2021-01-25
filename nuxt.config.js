@@ -28,7 +28,7 @@ export default {
         hid: "twitter:card",
         property: "twitter:card",
         name: "twitter:card",
-        content: "Movie Preview App built with Nuxt Js | Erwin Rahayu"
+        content: "summary_large_image"
       },
       {
         hid: "twitter:site",
