@@ -26,16 +26,27 @@ export default {
       },
       {
         hid: "twitter:card",
+        property: "twitter:card",
         name: "twitter:card",
         content: "Movie Preview App built with Nuxt Js | Erwin Rahayu"
       },
-      { hid: "twitter:site", name: "twitter:site", content: "@ErwinRA7" },
+      {
+        hid: "twitter:site",
+        property: "twitter:site",
+        name: "twitter:site",
+        content: "@ErwinRA7"
+      },
       {
         hid: "twitter:url",
         name: "twitter:url",
         content: "https://devmovie.netlify.app/"
       },
-      { hid: "twitter:creator", name: "twitter:creator", content: "@ErwinRA7" },
+      {
+        hid: "twitter:creator",
+        property: "twitter:creator",
+        name: "twitter:creator",
+        content: "@ErwinRA7"
+      },
       {
         hid: "twitter:title",
         name: "twitter:title",
@@ -45,6 +56,11 @@ export default {
         hid: "twitter:description",
         name: "twitter:description",
         content: "Movie Vue - Movie App Preview Built with NUXT Js"
+      },
+      {
+        hid: "twitter:image:src",
+        property: "twitter:image:src",
+        content: "/movievue-home-web-erwin-rahayu.png"
       },
       {
         hid: "twitter:image",
