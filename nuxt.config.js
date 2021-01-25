@@ -49,7 +49,7 @@ export default {
       {
         hid: "twitter:image",
         name: "twitter:image",
-        content: "/movievue-home-web-erwin-rahayu"
+        content: "/movievue-home-web-erwin-rahayu.png"
       },
       {
         property: "og:title",
@@ -60,7 +60,7 @@ export default {
         content: "Movie Vue - Movie App Preview Built with NUXT Js"
       },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: "/movievue-home-web-erwin-rahayu" },
+      { property: "og:image", content: "/movievue-home-web-erwin-rahayu.png" },
       {
         property: "og:description",
         content: "Movie Preview App built with Nuxt Js | Erwin Rahayu"
