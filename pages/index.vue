@@ -106,6 +106,7 @@
 import CardMovie from "~/components/Card/CardMovie";
 import * as api from "~/services/api";
 export default {
+ 
   components: { CardMovie },
   data: () => ({
     movies: [],

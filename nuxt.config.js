@@ -8,12 +8,63 @@ export default {
     titleTemplate: "%s - MovieApp",
     title: "MovieApp",
     htmlAttrs: {
-      lang: "en"
+      lang: "en",
+      amp: true
     },
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      {
+        hid: "description",
+        name: "description",
+        content: "Movie Preview built with Nuxt Js | Erwin Rahayu"
+      },
+      {
+        hid: "viewport",
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
+      },
+      {
+        hid: "twitter:card",
+        name: "twitter:card",
+        content: "Movie Preview App built with Nuxt Js | Erwin Rahayu"
+      },
+      { hid: "twitter:site", name: "twitter:site", content: "@ErwinRA7" },
+      {
+        hid: "twitter:url",
+        name: "twitter:url",
+        content: "https://devmovie.netlify.app/"
+      },
+      { hid: "twitter:creator", name: "twitter:creator", content: "@ErwinRA7" },
+      {
+        hid: "twitter:title",
+        name: "twitter:title",
+        content: "Movie Vue - Movie App Preview Built with NUXT Js"
+      },
+      {
+        hid: "twitter:description",
+        name: "twitter:description",
+        content: "Movie Vue - Movie App Preview Built with NUXT Js"
+      },
+      {
+        hid: "twitter:image",
+        name: "twitter:image",
+        content: "/movievue-home-web-erwin-rahayu"
+      },
+      {
+        property: "og:title",
+        content: "Movie Vue - Movie App Preview Built with NUXT Js"
+      },
+      {
+        property: "og:site_name",
+        content: "Movie Vue - Movie App Preview Built with NUXT Js"
+      },
+      { property: "og:type", content: "website" },
+      { property: "og:image", content: "/movievue-home-web-erwin-rahayu" },
+      {
+        property: "og:description",
+        content: "Movie Preview App built with Nuxt Js | Erwin Rahayu"
+      }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
@@ -27,7 +78,7 @@ export default {
   },
   privateRuntimeConfig: {
     API_KEY: process.env.API_KEY,
-    API_URL: process.env.API_URL,
+    API_URL: process.env.API_URL
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
